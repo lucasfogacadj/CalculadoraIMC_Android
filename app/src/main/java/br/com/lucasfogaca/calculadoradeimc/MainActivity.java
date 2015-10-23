@@ -1,5 +1,6 @@
 package br.com.lucasfogaca.calculadoradeimc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         txt.setText("Informe os valores a baixo:");
 
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 result = String.valueOf(imc);
 
                 resultado.setText("IMC = " + result);
+
+                Intent intent = new Intent(MainActivity.this, Tela2.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("result", result);
+                intent.putExtras(bundle);
+
+                startActivity(intent);
 
             }
         });

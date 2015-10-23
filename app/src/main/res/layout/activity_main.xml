@@ -42,20 +42,20 @@
         android:text="Calcular"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/resultado"
         android:hint="IMC"
-        android:layout_below="@+id/altura"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
-        android:layout_alignParentStart="false"
         android:focusable="false"
         android:textAlignment="center"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:layout_below="@+id/altura"
+        android:layout_alignParentStart="true" />
+
 
 
 </RelativeLayout>
