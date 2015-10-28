@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         peso = (EditText) findViewById(R.id.peso);
         altura = (EditText) findViewById(R.id.altura);
         txt = (TextView) findViewById(R.id.textView2);
-        resultado = (TextView) findViewById(R.id.resultado);
+       // resultado = (TextView) findViewById(R.id.resultado);
 
         txt.setText("Informe os valores a baixo:");
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 String result;
                 result = String.valueOf(imc);
 
-                resultado.setText("IMC = " + result);
+                //resultado.setText("IMC = " + result);
 
                 Intent intent = new Intent(MainActivity.this, Tela2.class);
 
